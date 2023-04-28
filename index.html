@@ -1,401 +1,501 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
 	<meta name="generator" content="Hugo 0.111.3">
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta charset="utf-8" />
   <title></title>
-  <meta name="author" content="Przemek Boruta">
-  <meta name="description" content="Home Index Content">
-  <meta name="keywords" content="blog,developer,personal,machine learning">
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content=""/>
-
-  <meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-
-  <link rel="stylesheet" href="/css/bootstrap.min.css"  crossorigin="anonymous">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Personal Portfolio"
+  />
   
-  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="/sass/main.css">
-
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
-
-  <script src=/js/lazysizes.min.js></script>
-
-  <link rel="alternate" type="application/json" href="/index.json" title="Przemek Boruta" />
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Przemek Boruta" />
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <meta name="author" content="Przemysław Boruta" />
   
 
+  <!-- plugins -->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" />
+  
+    <link rel="stylesheet" href="/plugins/text-animation/text-animation.css" />
+  
+    <link rel="stylesheet" href="/plugins/hugrid/hugrid.css" />
+  
+
+  <!-- Main Stylesheet -->
+
+  
+  <link rel="stylesheet" href="/css/style.min.css" media="screen" />
+
+  <!--Favicon-->
+
+  
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCDEFG123"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ABCDEFG123');
+    </script>
+  
 </head>
-
-
-
-<body ontouchstart="">
-  <nav class="navbar navbar-default navbar-custom navbar-fixed-top ">
-  <div class="container-fluid">
-    
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://localhost:1313/">Przemek Boruta</a>
-    </div>
-    
-    <div id="huxblog_navbar">
-      <div class="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          
-          <li><a href="/" title="Home">Home</a></li>
-          
-          <li><a href="/photography/" title="Photography">Photography</a></li>
-          
-          <li><a href="/series/themes-guide/" title="Guide">Guide</a></li>
-          
-          <li><a href="/about/" title="About">About</a></li>
-          
-          <li><a href="https://github.com/przemekboruta/" title="Github">Github</a></li>
-          
-
-          <li class="search-icon">
-            <a href="javascript:void(0)">
-              <i class="fa fa-search"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-  </div>
+<body> <!-- preloader start -->
+<div class="preloader">
   
-</nav>
-<script>
+  <img src="/images/preloader.gif" alt="preloader" />
   
-  
-  
-  var $body = document.body;
-  var $toggle = document.querySelector(".navbar-toggle");
-  var $navbar = document.querySelector("#huxblog_navbar");
-  var $collapse = document.querySelector(".navbar-collapse");
-
-  var __HuxNav__ = {
-    close: function () {
-      $navbar.className = " ";
-      
-      setTimeout(function () {
-        
-        if ($navbar.className.indexOf("in") < 0) {
-          $collapse.style.height = "0px";
-        }
-      }, 400);
-    },
-    open: function () {
-      $collapse.style.height = "auto";
-      $navbar.className += " in";
-    },
-  };
-
-  
-  $toggle.addEventListener("click", function (e) {
-    if ($navbar.className.indexOf("in") > 0) {
-      __HuxNav__.close();
-    } else {
-      __HuxNav__.open();
-    }
-  });
-
-  
-
-  document.addEventListener("click", function (e) {
-    if (e.target == $toggle) return;
-    if (e.target.className == "icon-bar") return;
-    __HuxNav__.close();
-  });
-</script>
-  
-<div class="search-page">
-  <div class="search-icon-close-container">
-    <span class="search-icon-close">
-      <i class="fa fa-chevron-down"></i>
-    </span>
-  </div>
-  <div class="search-main container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <form></form>
-        <input type="text" id="search-input" placeholder="$ grep...">
-        </form>
-        <div id="search-results" class="mini-post-list"></div>
-      </div>
-    </div>
-  </div>
 </div>
-
-  
-  
-
-
-
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-
+<!-- preloader end --> 
+<section class="menu menu-fix" id="menu">
+  <nav>
+    
+    <div class="menu-container">
+      <div class="desktop-menu-logo">
+        <a href="/"
+          ><img
+            class="img-fluid"
+            src="/images/logo.svg"
+            alt="Przemek Boruta"
+            id="desktop-logo"
+        /></a>
+      </div>
+      <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
+        
+        <li class="menu-item hvr-underline-from-left 1">
+          <a href="#home">Home</a>
+        </li>
+        
+        <li class="menu-item hvr-underline-from-left 2">
+          <a href="#about">About me</a>
+        </li>
+        
+        <li class="menu-item hvr-underline-from-left 3">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        
+      </ul>
+      
+      <div class="mobile-menu">
+        <div class="mobile-menu-nav">
+          <a class="menu-link">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="mobile-menu-logo">
+          <a href="/"
+            ><img
+              class="img-fluid"
+              src="/images/logo-dark.svg"
+              alt="Przemek Boruta"
+          /></a>
+        </div>
+        <div class="menu-slider">
+          <nav>
+            <ul class="mobile-menu-list">
+              
+              <li class="mobile-menu-item 1 mx-auto">
+                <a href="#home">Home</a>
+              </li>
+              
+              <li class="mobile-menu-item 1 mx-auto">
+                <a href="#about">About me</a>
+              </li>
+              
+              <li class="mobile-menu-item 1 mx-auto">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              
+            </ul>
+            <ul class="mobile-menu-icons list-inline mx-auto">
+              
+              <li>
+                <a href="https://github.com/przemekboruta"
+                  ><i class="fab fab fa-github fa-2x"></i
+                ></a>
+              </li>
+              
+              <li>
+                <a href="https://www.linkedin.com/in/pboruta"
+                  ><i class="fab fab fa-linkedin fa-2x"></i
+                ></a>
+              </li>
+              
+              <li>
+                <a href="https://www.facebook.com/przemek.boruta.31"
+                  ><i class="fab fab fa-facebook fa-2x"></i
+                ></a>
+              </li>
+              
+              <li>
+                <a href="https://instagram.com/przemekboruta"
+                  ><i class="fab fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+              
+              <li>
+                <a href="mailto:przemekboruta@interia.pl"
+                  ><i class="fab fas fa-envelope fa-2x"></i
+                ></a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="header" id="header">
+   
+  <div class="hero-image">
+    
+    <img
+      class="d-none d-md-block"
+      src="/images/background.jpg"
+      alt="background"
+    /><img
+      class="d-md-none"
+      src="/images/tosia.jpg"
+      alt="background"
+    />
+  </div>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-          <h1>Przemek Boruta</h1>
+    <div class="row content">
+      <div
+        class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container"
+      >
+        <div class="head-holder">
+          <h1 class="cd-words-wrapper">Hello! :)</h1>
+          <h1 class="introduction">I&rsquo;m Przemek Boruta</h1>
+          <div class="animated-text">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper">
+                 
+                <b class="is-visible">Machine Learning Engineer</b>  <b>Amateur Photographer</b>  <b>Artificial Intelligence geek</b>  <b>...</b> 
+              </span>
+            </strong>
+          </div>
           
-          
-          
-          
-          <span class="subheading"></span>
         </div>
       </div>
     </div>
   </div>
-</header>
-
-
   
-
-  
-  <div class="container">
-    <div class="row">
-      
-      
-      
-      <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-        
-
-
-   <div class="post-preview">
-  <a href="/posts/mypost/">
-      <h2 class="post-title">First testing post</h2>
-      
-      <div class="post-content-preview">
-        
-        Hahah siema ąąąęó∑óóą∑łłłńćźźźóŻzz
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  pboruta  on Fri, Apr 28, 2023
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/posts/emoji-support/">
-      <h2 class="post-title">Emoji Support</h2>
-      
-      <div class="post-content-preview">
-         Guide to emoji usage in Hugo
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Hugo Authors  on Tue, Mar 5, 2019
-  </p>
-</div>
-<hr>
-
-
-
-
-      </div>
-      
-      <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-
-        
-        <section>
-  
-  
-  <h5>FEATURED TAGS</h5>
-  <div class="tags">
-    
-    <a href="/tags/emoji/">emoji</a>
-    
-  </div>
-</section>
-        
-<section class="visible-md visible-lg">
-  <hr>
-  
-  <h5><a href=/about/>ABOUT ME</a></h5>
-  
-
-  
-  <div class="short-about">
-    
-    <img src="/img/home-bg.jpg" />
-    
-    
-    <p>Machine Learning Engineer</p>
-    
-    
-    <ul class="list-inline">
-
-<li>
-  <a href="https://github.com/przemekboruta" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://linkedin.com/in/pboruta" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://facebook.com/johndoe" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://mastodon.social/johndoe" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li></ul>
-
-  </div>
 </section>
 
-        
-        
-
-<hr>
-<h5>FRIENDS</h5>
-<ul class="list-inline">
-  
-  <li><a href="https://gohugo.io" target="_blank">John Doe</a></li>
-  
-  <li><a href="https://gohugo.io" target="_blank">John Doe</a></li>
-  
-</ul>
-
-
+<section class="about-me" id="about">
+  <div class="container">
+     
+    <div class="row about-me-holder">
+      <div
+        class="
+          col-lg-6 col-md-6 col-sm-6
+          about-me-text
+          d-flex
+          align-self-center
+        "
+      >
+        <div class="text-holder">
+          <h1>THIS IS ME</h1>
+          <p>Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on <a href="#contact">LinkedIn, Github, or by email</a>!</p>
+           
+          <a
+            href="/"
+            target="_blank"
+            rel="noreferrer"
+            class="button download-cv"
+          >
+            DOWNLOAD MY RESUME <i class="fa fa-download"></i
+          ></a>
+           
+        </div>
       </div>
       
-
-    </div>
-  </div>
-
-  
-
-  
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <ul class="list-inline text-center">
-
-<li>
-  <a href="https://github.com/przemekboruta" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://linkedin.com/in/pboruta" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://facebook.com/johndoe" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-<li>
-  <a href="https://mastodon.social/johndoe" target="_blank">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li></ul>
-
-        <p class="copyright text-muted">
-          Copyright &copy; Przemek Boruta 2023  
-          <br>
-          Powered by <a href="https://gohugo.io">Hugo</a>
-        </p>
+      <div class="col-lg-5 col-sm-6 col-9 about-me-images">
+        <img src="/images/profile.JPG" alt="about-me" />
       </div>
+      
+    </div>
+     
+
+    <div class="row experience-skill">
+       
+      <div class="col-lg-6 col-sm-6 col-11 experience">
+        <h2>EXPERIENCE</h2>
+        <ul class="experience-chart">
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Expert - Machine Learning</h3>
+                
+                <span>PKO Bank Polski S.A. |</span>
+                 
+                <span>02.2023 - Current</span>
+                 
+                <p>Most notable projects:<br>
+&ndash; Document (scans) classification with data detection (e.g. sender’s data, data of the person to whom the document relates; about 25 data types) w/ asynchronous processing<br>
+&ndash; Intent recognition, named entity recognition, fuzzy matching models for chatbots<br>
+&ndash; Anomaly detection in IT infrastructure<br>
+&ndash; Sensitive data detector (GDPR) in short notes in company’s CRM software<br>
+&ndash; Topic modelling</p>
+                
+              </div>
+            </li>
+          
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Senior Specialist - Machine Learning</h3>
+                
+                <span>PKO Bank Polski S.A. |</span>
+                 
+                <span>01.2022 - 02.2023</span>
+                 
+                <p><hr>
+<h2 id="new-stage-">NEW STAGE 😄</h2>
+<hr>
+</p>
+                
+              </div>
+            </li>
+          
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Senior Product Development Specialist</h3>
+                
+                <span>ING Bank Śląski S.A. |</span>
+                 
+                <span>04.2020 - 12.2021</span>
+                 
+                <p><p>&ndash; Improving credit and financing products in the Bank and the ING Group companies by creating cost effective and faster credit processes for corporate clients.</p>
+<p>&ndash; Working for reporting automation in Agile Center - Financing</p>
+<p>&ndash; Developing automatic credit paths.</p>
+</p>
+                
+              </div>
+            </li>
+          
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Credit Risk Modelling Specialist</h3>
+                
+                <span>ING Bank Śląski S.A. |</span>
+                 
+                <span>05.2019 - 06.2019</span>
+                 
+                <p><p>&ndash; Development internship aimed at improving skills of working with IRB models as well as working on large datasets.</p>
+<p>&ndash; Preparing a database of corporate clients&rsquo; decision points that can be used for the purposes of building and monitoring models.</p>
+</p>
+                
+              </div>
+            </li>
+          
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Product Development Specialist</h3>
+                
+                <span>ING Bank Śląski S.A. |</span>
+                 
+                <span>10.2018 - 03.2020</span>
+                 
+              </div>
+            </li>
+          
+          
+          
+            <li>
+              <div class="single-experience">
+                <h3>Trainee</h3>
+                
+                <span>ING Bank Śląski S.A. |</span>
+                 
+                <span>07.2018 - 09.2018</span>
+                 
+              </div>
+            </li>
+          
+          
+        </ul>
+      </div>
+         
+      <div class="col-lg-6 col-sm-6 col-11 skill">
+        <h2>SOME SKILLS</h2>
+        <div class="skill-progress-bar">
+          
+          <div class="clearfix">
+            <span class="skillbar-title">Python</span> 
+            
+            
+            <div class="skillbar" data-percent="80%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">Deep Learning</span> 
+            
+            <p>pytorch · tensorflow</p>
+            
+            <div class="skillbar" data-percent="65%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">Computer Vision</span> 
+            
+            <p>YOLO · cv2 · Tesseract · TrOCR</p>
+            
+            <div class="skillbar" data-percent="55%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">Natural Language Processing</span> 
+            
+            <p>transformers · Haystack · LLMs · FastText · spacy</p>
+            
+            <div class="skillbar" data-percent="90%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">Workflows</span> 
+            
+            <p>Apache Airflow · Celery</p>
+            
+            <div class="skillbar" data-percent="50%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">DBs &amp; Search</span> 
+            
+            <p>PostgreSQL · ElasticSearch · FAISS · Oracle</p>
+            
+            <div class="skillbar" data-percent="80%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+          <div class="clearfix">
+            <span class="skillbar-title">MLOps</span> 
+            
+            <p>Kubernetes · OCP · Docker/Podman · Jenkins</p>
+            
+            <div class="skillbar" data-percent="60%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       
     </div>
   </div>
-</footer>
-
-<script src=/js/jquery.min.js></script>
-<script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
+</section>
 
 
+ 
+<div class="fun-facts container pt-5">
+  
+  <div class="fun-fact-holder">
+    <img class="img-fluid" src="/images/icons/coffee.png" alt="CUPS PER DAY" />
+    <p class="fact-counter count" data-count="2">0</p>
+    <p>CUPS PER DAY</p>
+  </div>
+  
+  <div class="fun-fact-holder">
+    <img class="img-fluid" src="/images/icons/web-development.png" alt="SITES BUILT" />
+    <p class="fact-counter count" data-count="25">0</p>
+    <p>SITES BUILT</p>
+  </div>
+  
+  <div class="fun-fact-holder">
+    <img class="img-fluid" src="/images/icons/happy.png" alt="USELESS ROW OF ICONS" />
+    <p class="fact-counter count" data-count="1">0</p>
+    <p>USELESS ROW OF ICONS</p>
+  </div>
+  
+</div>
+ 
 
-<script src="/js/hux-blog.min.c4ea77041cd3edbfc8b2622cd887a9a5d8760a4162d14489e36d2a3fa4c90172.js"></script>
 
 
-<script src=/js/simple-jekyll-search.min.js></script>
+<div class="footer container text-center" id="contact">
+  <ul class="footer-icons list-inline">
+    
+      <li>
+        <a href="https://github.com/przemekboruta" target="_blank" rel="noreferrer"
+          ><i class="fab fa-github footer-icon fa-3x" aria-label=""></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="https://www.linkedin.com/in/pboruta" target="_blank" rel="noreferrer"
+          ><i class="fab fa-linkedin footer-icon fa-3x" aria-label=""></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="https://www.facebook.com/przemek.boruta.31" target="_blank" rel="noreferrer"
+          ><i class="fab fa-facebook footer-icon fa-3x" aria-label=""></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="https://instagram.com/przemekboruta" target="_blank" rel="noreferrer"
+          ><i class="fab fa-instagram footer-icon fa-3x" aria-label=""></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="mailto:przemekboruta@interia.pl" target="_blank" rel="noreferrer"
+          ><i class="fas fa-envelope footer-icon fa-3x" aria-label=""></i
+        ></a>
+      </li>
+    
+  </ul>
+  <div class="credit">
+    Copyright Przemysław Boruta ©
+    <span id="current-year"></span>
+  </div>
+</div>
+<!-- JS Plugins --> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
+<script src="/plugins/text-animation/text-animation.js"></script>
 
+<script src="/plugins/hugrid/hugrid.min.js"></script>
+ <!-- Main Scripts --> 
+<script src="/js/script.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="/zoomjs/zoom.min.js"></script>
-
+<script src="/js/hugrid.custom.min.js"></script>
 </body>
-
 </html>
