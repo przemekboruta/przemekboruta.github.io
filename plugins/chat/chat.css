@@ -248,7 +248,7 @@
   transition: background 0.2s ease;
 }
 .message-box .message-submit:hover {
-  background: #1d7745;
+  background: #5694f8;
 }
 
 .message-box .message-reset {
@@ -268,7 +268,7 @@
   transition: background 0.2s ease;
 }
 .message-box .message-reset:hover {
-  background: #1d7745;
+  background: #5694f8;
 }
 
 /*-------------------- Custom Scrollbar --------------------*/
