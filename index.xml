@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Przemek Boruta</title>
-    <link>https://przemekboruta.github.io/</link>
-    <description>Recent content on Przemek Boruta</description>
+    <title>Przemysław Boruta - ML Engineer</title>
+    <link>https://pboruta.pl/</link>
+    <description>Recent content on Przemysław Boruta - ML Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Apr 2023 20:16:26 +0200</lastBuildDate><atom:link href="https://przemekboruta.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First testing post</title>
-      <link>https://przemekboruta.github.io/posts/mypost/</link>
-      <pubDate>Fri, 28 Apr 2023 20:16:26 +0200</pubDate>
-      
-      <guid>https://przemekboruta.github.io/posts/mypost/</guid>
-      <description>Hahah siema ąąąęó∑óóą∑łłłńćźźźóŻzz</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://przemekboruta.github.io/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://przemekboruta.github.io/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
+    <language>en</language>
+    <atom:link href="https://pboruta.pl/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

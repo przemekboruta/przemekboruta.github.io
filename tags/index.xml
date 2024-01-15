@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Przemek Boruta</title>
-    <link>https://przemekboruta.github.io/tags/</link>
-    <description>Recent content in Tags on Przemek Boruta</description>
+    <title>Tags on Przemysław Boruta - ML Engineer</title>
+    <link>https://pboruta.pl/tags/</link>
+    <description>Recent content in Tags on Przemysław Boruta - ML Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://przemekboruta.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>emoji</title>
-      <link>https://przemekboruta.github.io/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://przemekboruta.github.io/tags/emoji/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language>
+    <atom:link href="https://pboruta.pl/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

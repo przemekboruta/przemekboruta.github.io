@@ -2,31 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://przemekboruta.github.io/</loc>
-    <lastmod>2023-04-28T20:16:26+02:00</lastmod>
+    <loc>https://pboruta.pl/categories/</loc>
   </url><url>
-    <loc>https://przemekboruta.github.io/posts/mypost/</loc>
-    <lastmod>2023-04-28T20:16:26+02:00</lastmod>
+    <loc>https://pboruta.pl/</loc>
   </url><url>
-    <loc>https://przemekboruta.github.io/posts/</loc>
-    <lastmod>2023-04-28T20:16:26+02:00</lastmod>
-  </url><url>
-    <loc>https://przemekboruta.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://przemekboruta.github.io/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://przemekboruta.github.io/tags/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://przemekboruta.github.io/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://przemekboruta.github.io/categories/</loc>
-  </url><url>
-    <loc>https://przemekboruta.github.io/series/</loc>
-  </url><url>
-    <loc>https://przemekboruta.github.io/series/themes-guide/</loc>
+    <loc>https://pboruta.pl/tags/</loc>
   </url>
 </urlset>
