@@ -15,11 +15,11 @@ $(window).load(function() {
 
 
 function setDate(){
-  d = new Date()
-  if (m != d.getMinutes()) {
-    m = d.getMinutes();
-    $('<div class="timestamp">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
-  }
+  // d = new Date()
+  // if (m != d.getMinutes()) {
+  //   m = d.getMinutes();
+  //   $('<div class="timestamp">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
+  // }
 }
 
 function insertMessage() {
@@ -28,7 +28,7 @@ function insertMessage() {
     return false;
   }
   $('<div class="message message-personal">' + msg + '</div>').appendTo($('.messages-content')).addClass('new');
-  setDate();
+  // setDate();
   $('.message-input').val(null);
   updateScrollbar();
   // fakeMessage();
@@ -37,7 +37,7 @@ function insertMessage() {
   //   setTimeout(function(){
   //       $messages.mCustomScrollbar("scrollTo","bottom");
   //   },1000);
-  setDate()
+  // setDate()
 }
 
 $('.message-submit').click(function() {
@@ -56,23 +56,28 @@ $(window).on('keydown', function(e) {
 })
 
 var Fake = [
-    'Cześć! Jestem botem opowiadającym o Przemku. Nie czekaj - zadaj mi pytanie :)',
-    'Witaj, możemy porozmawiać o Przemku. A może chcesz wiedzieć jaka będzie jutro pogoda?',
-    'Drogi zwiedzaczu strony, porozmawiaj ze mną, a chętnie udzielę Ci informacji o Przemku i jego ścieżce kariery!'
+    "Hiho! I'm a Przemek's personal chatbot - ask me about him and your wish will come true :)",
+    "Hello! We can talk about Przemek. Don't wait, just ask me.",
+    "Hello! I'm your personal chatbot for all things Przemek. Ask away!",
+    "Greetings! I'm the Przemek-advice chatbot. Ask me anything related to Przemek, and I'll answer so quickly that even Przemek would be surprised!",
+    "Heyho! I'm here to answer all your questions about Przemek. Even the ones you haven't thought of yet. Get ready for some shocking answers!",
+    "Good day! I'm the chatbot who knows Przemek better than his own calendar. What do you want to know?",
+    // 'Witaj, możemy porozmawiać o Przemku. A może chcesz wiedzieć jaka będzie jutro pogoda?',
+    // 'Drogi zwiedzaczu strony, porozmawiaj ze mną, a chętnie udzielę Ci informacji o Przemku i jego ścieżce kariery!'
 ]
 
 function fakeMessage() {
   if ($('.message-input').val() != '') {
     return false;
   }
-  $('<div class="message loading new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D4D03AQHZOPwxjEjR0Q/profile-displayphoto-shrink_400_400/0/1696445285366?e=2147483647&v=beta&t=SpW-Pkn5zFK5eQCqs7OwSrtsotPNu2TXUgHQy5mZzsg" /></figure><span></span></div>').appendTo($('.messages-content'));
+  $('<div class="message loading new"><figure class="avatar"><img src="/images/ai_logo.png" /></figure><span></span></div>').appendTo($('.messages-content'));
   updateScrollbar();
 
   const i = Math.floor(Math.random() * Fake.length);
   setTimeout(function() {
     $('.message.loading').remove();
-    $('<div class="message new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D4D03AQHZOPwxjEjR0Q/profile-displayphoto-shrink_400_400/0/1696445285366?e=2147483647&v=beta&t=SpW-Pkn5zFK5eQCqs7OwSrtsotPNu2TXUgHQy5mZzsg" /></figure>' + Fake[i] + '</div>').appendTo($('.messages-content')).addClass('new');
-    setDate();
+    $('<div class="message new"><figure class="avatar"><img src="/images/ai_logo.png" /></figure>' + Fake[i] + '</div>').appendTo($('.messages-content')).addClass('new');
+    // setDate();
     updateScrollbar();
   }, 1000 + (Math.random() * 20) * 100);
 
@@ -90,7 +95,7 @@ function goodMessage() {
     chat_history: chatHistory,
   };
   console.log(dataToSend);
-  $('<div class="message loading new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D4D03AQHZOPwxjEjR0Q/profile-displayphoto-shrink_400_400/0/1696445285366?e=2147483647&v=beta&t=SpW-Pkn5zFK5eQCqs7OwSrtsotPNu2TXUgHQy5mZzsg" /></figure><span></span></div>').appendTo($('.messages-content'));
+  $('<div class="message loading new"><figure class="avatar"><img src="/images/ai_logo.png" /></figure><span></span></div>').appendTo($('.messages-content'));
   updateScrollbar();
 
   // $('.message.loading').remove();
@@ -101,8 +106,8 @@ function goodMessage() {
           return responseData.result; // Zwracanie wartości z pola 'result'
       })
       .then(result => {
-          $('<div class="message new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D4D03AQHZOPwxjEjR0Q/profile-displayphoto-shrink_400_400/0/1696445285366?e=2147483647&v=beta&t=SpW-Pkn5zFK5eQCqs7OwSrtsotPNu2TXUgHQy5mZzsg" /></figure>' + result + '</div>').appendTo($('.messages-content')).addClass('new');
-          setDate(); // Przeniesione wywołanie setDate() tutaj, po dodaniu diva
+          $('<div class="message new"><figure class="avatar"><img src="/images/ai_logo.png" /></figure>' + result + '</div>').appendTo($('.messages-content')).addClass('new');
+          // setDate(); // Przeniesione wywołanie setDate() tutaj, po dodaniu diva
           updateScrollbar();
       })
       .then(x => {
