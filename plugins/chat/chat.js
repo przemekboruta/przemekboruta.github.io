@@ -2,7 +2,7 @@ var $messages = $('.messages-content'),
     d, h, m,
     i = 0;
 
-const endpoint = "http://localhost:8080/ask"
+const endpoint = "https://starfish-app-kye5p.ondigitalocean.app/ask"
 const headers = {"Content-Type": "application/json"}
 const method = "POST"
 
