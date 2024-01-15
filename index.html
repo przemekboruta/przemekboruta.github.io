@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.121.2">
   <meta charset="utf-8" />
   <title>Przemysław Boruta - ML Engineer</title>
 
@@ -28,9 +28,13 @@
   
     <link rel="stylesheet" href="/plugins/hugrid/hugrid.css" />
   
-    <link rel="stylesheet" href="/plugins/lightbox/lightbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" />
   
-    <link rel="stylesheet" href="/plugins/lightbox/lightbox.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material&#43;Icons" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
+    <link rel="stylesheet" href="/plugins/chat/chat.css" />
   
 
   <!-- Main Stylesheet -->
@@ -45,6 +49,12 @@
   
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCDEFG123"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -198,6 +208,26 @@
   </div>
   
 </section>
+
+<div class="chat">
+  <div class="chat-title">
+    <h1>Asystent AI Przemka</h1>
+    <h2>Zapytaj mnie o coś związanego z Przemkiem</h2>
+    <figure class="avatar">
+      <img src="https://media.licdn.com/dms/image/D4D03AQHZOPwxjEjR0Q/profile-displayphoto-shrink_400_400/0/1696445285366?e=2147483647&v=beta&t=SpW-Pkn5zFK5eQCqs7OwSrtsotPNu2TXUgHQy5mZzsg" /></figure>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" placeholder="Type message", maxlength="100"></textarea>
+    <button type="reset" class="message-reset">
+      <i class="fa fa-refresh"></i>
+    </button>
+        <button type="submit" class="message-submit">Send</button>
+  </div>
+
+</div>
 
 <section class="about-me" id="about">
   <div class="container">
@@ -455,17 +485,13 @@
   </div>
 </div>
 <!-- JS Plugins --> 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
 <script src="/plugins/text-animation/text-animation.js"></script>
 
 <script src="/plugins/hugrid/hugrid.min.js"></script>
 
-<script src="/plugins/lightbox/lightbox.min.js"></script>
-
-<script src="/plugins/lightbox/lightbox.js"></script>
+<script src="/plugins/chat/chat.js"></script>
  <!-- Main Scripts --> 
 <script src="/js/script.min.js"></script>
 
