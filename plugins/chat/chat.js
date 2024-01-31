@@ -6,6 +6,9 @@ const endpoint = "https://starfish-app-kye5p.ondigitalocean.app/ask"
 const headers = {"Content-Type": "application/json"}
 const method = "POST"
 
+let chatBoxVisible = false;
+let tooltipVisible = false;
+
 $(window).load(function() {
   // $messages.mCustomScrollbar();
   setTimeout(function() {
@@ -201,3 +204,50 @@ function removeDivsAndExecuteFakeMessage() {
     console.error("Element with class 'messages-content' not found");
   }
 }
+
+
+function toggleChat() {
+  const chatbox = document.querySelector('.chat')
+  const chaticon = document.querySelector('.chat-icon')
+
+  if (chatBoxVisible) {
+    chatbox.style.display = "none";
+    chaticon.style.display = "flex";
+  } else {
+    chatbox.style.display = "flex";
+    chaticon.style.display = "none";
+    removeTooltip();
+  }
+
+  chatBoxVisible = !chatBoxVisible
+}
+
+
+function showTooltip() {
+  const tooltip = document.createElement("div");
+  tooltip.classList.add("tooltip");
+  tooltip.textContent = "Try my chatbot, it's right here! ->";
+
+  if (!chatBoxVisible) {
+    document.body.appendChild(tooltip);
+    tooltip.addEventListener('click', function() {
+      this.style.display = 'none';
+    tooltipVisible = true;
+    })
+  }
+}
+
+function removeTooltip() {
+  if (tooltipVisible) {
+    const tooltip = document.querySelector('.tooltip')
+    tooltip.remove();
+    tooltipVisible = false;
+  }
+}
+
+setTimeout(() => {
+  showTooltip()
+}, 10000);
+setTimeout(() => {
+  removeTooltip()
+}, 10000);
